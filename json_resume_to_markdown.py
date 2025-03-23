@@ -43,7 +43,7 @@ def json_to_markdown(json_file, markdown_file):
 
 if __name__ == "__main__":
     JSON_PATH = '/home/ara/resume/resume.json'
-    MARKDOWN_PATH = '/home/ara/resume/resume1.md'
+    MARKDOWN_PATH = '/home/ara/resume/resume.md'
     YAML_PATH = '/home/ara/resume/resume.yaml'
     print("Converting resume to Markdown...")
     json_to_markdown(JSON_PATH, MARKDOWN_PATH)
