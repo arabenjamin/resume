@@ -5,3 +5,5 @@ env/
 # python cache
 __pycache__/
 
+# Obsidian
+.obsidian/

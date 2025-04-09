@@ -9,6 +9,15 @@
     "objective": "Energetic, innovative and competent business professional offering a rich mixture of experience and success in a variety of work environments. I am looking to put my work experience and my passion for programming and technology to good use to help ensure success for the company or institution that I’ll be a part of.",
     "experience": [
       {
+        "company": "Consultant/Contractor",
+        "location": "Remote",
+        "title": "Freelance Software Engineer",
+        "dates": "February 2023 - Present",
+        "responsibilities": [
+          
+        ]
+      },
+      {
         "company": "HP",
         "location": "Boise, ID (Remote via Experis)",
         "title": "Software Engineer",
