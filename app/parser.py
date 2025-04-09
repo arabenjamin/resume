@@ -1,5 +1,4 @@
 import json
-import yaml
 import logging
 
 from app.resume_model import Resume
