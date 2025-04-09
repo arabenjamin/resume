@@ -3,8 +3,6 @@ name: Test Runner
 on:
   push:
     branches: [ "dev" ]
-  pull_request:
-    branches: [ "dev" ]
 
   workflow_dispatch:
 
@@ -29,5 +27,10 @@ jobs:
 
       - name: Run tests
         run: pytest
+      
+      - name: Convert to Markdown
+        run: |
+            python main.py
+
 
 

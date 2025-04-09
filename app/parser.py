@@ -31,7 +31,7 @@ class Parser:
     
     def get_markdown(self):
 
-        with open("./resume.md", 'w') as f:
+        with open("./docs/resume.md", 'w') as f:
 
             f.write(f"# {self.resume.name}\n\n")
             f.write(f"**Phone:** {self.resume.contact.phone}  \n")
@@ -62,11 +62,3 @@ class Parser:
 
 
 
-if __name__ == "__main__":
-    JSON_PATH = '/home/ara/resume/resume.json'
-    MARKDOWN_PATH = '/home/ara/resume/resume.md'
-    YAML_PATH = '/home/ara/resume/resume.yaml'
-    print("Converting resume to Markdown...")
-    parser = Parser(json_path=JSON_PATH)
-    md_resume = parser.get_markdown()
-    print("Conversion complete!")
