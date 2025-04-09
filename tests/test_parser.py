@@ -36,3 +36,16 @@ def test_get_markdown(mock_json_file):
     assert isinstance(parser.resume, Resume)
 
     assert os.path.exists(file_path)
+
+def test_get_markdown_saves_to_docs(mock_json_file):
+    file_path = str(mock_json_file)
+    parser = Parser(json_path=file_path)
+    parser.get_markdown()
+    assert os.path.exists("./docs/resume.md")
+    with open("./docs/resume.md", 'r') as f:
+        content = f.read()
+        assert "## Objective" in content
+        assert "## Experience" in content
+        assert "## Skills" in content
+    os.remove("./docs/resume.md")
+
