@@ -47,5 +47,5 @@ def test_get_markdown_saves_to_docs(mock_json_file):
         assert "## Objective" in content
         assert "## Experience" in content
         assert "## Skills" in content
-    os.remove("./docs/resume.md")
+    os.remove("./docs/index.md")
 
