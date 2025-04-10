@@ -14,6 +14,7 @@ class Contact(BaseModel):
     email: str
     github: str
     linkedin: str
+    website: str
 
 
 class ExperienceItem(BaseModel):
@@ -21,6 +22,7 @@ class ExperienceItem(BaseModel):
     location: str
     title: str
     dates: str
+    summary: str
     responsibilities: List[str]
 
 
@@ -39,6 +41,7 @@ class Skills(BaseModel):
 class Resume(BaseModel):
     name: str
     contact: Contact
+    summary: str
     objective: str
     experience: List[ExperienceItem]
     skills: Skills

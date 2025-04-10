@@ -38,9 +38,25 @@ class Parser:
             f.write(f"**Email:** {self.resume.contact.email}  \n")
             f.write(f"**GitHub:** [{self.resume.contact.github}]({self.resume.contact.github})  \n")
             f.write(f"**LinkedIn:** [{self.resume.contact.linkedin}]({self.resume.contact.linkedin})\n\n")
-            
+
+            f.write(f"## Summary\n\n")
+            f.write(f"{self.resume.summary}\n\n")
+
+            f.write(f"```\n")
+
+            f.write(f" name: {self.resume.name}\n")
+            f.write(f" phone: {self.resume.contact.phone}\n")
+            f.write(f" email: {self.resume.contact.email}\n")
+            f.write(f" github: {self.resume.contact.github}\n")
+            f.write(f" linkedin: {self.resume.contact.linkedin}\n")
+            f.write("```\n\n")
+
+
+
             f.write("## Objective\n\n")
             f.write(f"{self.resume.objective}\n\n")
+
+            
             
             f.write("## Experience\n\n")
             for job in self.resume.experience:
@@ -54,7 +70,8 @@ class Parser:
             f.write("## Skills\n\n")
             for skill_category, skills in self.resume.skills.model_dump().items():
                 if skills:
-                    f.write(f"### {skill_category.capitalize()}\n")
+                    category = skill_category.replace("_", " ")
+                    f.write(f"### {category.capitalize()}\n")
                     for skill in skills:
                         f.write(f"- {skill}\n")
                     f.write("\n")

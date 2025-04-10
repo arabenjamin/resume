@@ -44,8 +44,9 @@ def test_get_markdown_saves_to_docs(mock_json_file):
     assert os.path.exists("./docs/index.md")
     with open("./docs/index.md", 'r') as f:
         content = f.read()
+        assert "## Summary" in content
         assert "## Objective" in content
         assert "## Experience" in content
         assert "## Skills" in content
-    os.remove("./docs/index.md")
+    #os.remove("./docs/index.md")
 
