@@ -71,9 +71,9 @@
         "location": "Redmond, WA",
         "title": "Fulfillment Manager",
         "dates": "Oct 2013 – Sept 2015",
-        "summary": "",
+        "summary": "I worked as a Fulfillment Manager to build and maintain a large pool of manual software testers that would be utilized by our client based on daily demands.",
         "responsibilities": [
-          "Being passionate about technology I decided my next step was to move to Seattle. Upon arrival, I started contracting for HCL where it was my role to maintain a pool of 600+ software testers that would be used by our clients based on daily needs. I created an optimized process that allowed us to efficiently schedule the software testers for the following day based on demands and ability to communicate to the software testers for quick turnaround.",
+          "created and optimized process that allowed us to efficiently schedule the software testers for the following day based on demands and ability to communicate to the software testers for quick turnaround.",
           "Define project deliverables, timeline, and resources required for related projects.",
           "Compiled project status reports and resolve any conflicts that would arise."
         ]
@@ -81,34 +81,39 @@
       {
         "company": "Law Office of Joseph P. Saulski",
         "location": "Waterford, MI",
-        "title": "IT Admin/Paralegal",
+        "title": "IT Office Manager / Technical Solutions Artist / Paralegal Admin /  Marketing solutions ",
         "dates": "Feb 2012 – Aug 2013",
-        "summary": "",
+        "summary": "I worked for an attorney, and I had many titles. I was hired specificaly becasue I was very technically inclined. I fullfilled paralegal work when needed.",
         "responsibilities": [
-          "Due to shortage of funding from the startup, a mutual colleague approached me to manage the IT solutions in his office. Being a new small law office I would double as a paralegal when needed.",
-          "Developed a web app to document and store new client information into a database instead of storing it in physical files."
+          "Built and maintained a client info database using SQLite3 and python, as well as managing the real physical records",
+          "Developed a web app to document and store new client information into a database",
+          "Developed Marketing soluitons utilizing SEO and SEM, Digital media, social media",
+          "Developed and executed marketing campaigns such as buying branded pens, and leaving them in places we thought our clients might visit."
         ]
       },
       {
         "company": "RCS Technology of Michigan LLC",
         "location": "Waterford, MI",
-        "title": "Account Manager",
+        "title": "Technical Account Manager/ Solutions Technician",
         "dates": "Apr 2011 – Jan 2012",
-        "summary": "",
+        "summary": "Sales role Working in a start-up that offered managed cloud IT solutions for small to medium sized businesses.I built relationships and solutions to bring in a new revenue streams to the company.",
+          
         "responsibilities": [
-          "After several years of installing networks and phone lines, I wanted to be more in the front line of IT solutions. I joined a start-up that offered managed IT solutions for small to medium sized businesses. In my short time there, I was able to reduce overhead cost and bring in a new revenue stream to the company.",
-          "Tapping into my previous experience I was able offer my clients cable and networking solutions for new clients that did not have any infrastructure setup.",
-          "Negotiated a deal between a client and the company where in exchange for services the client offered us office space thus reducing our overhead by 35%."
+          "Building and maintaing a CRM, always looking to build and maintian a sales pipeline",
+          "convert pipeline into sales revenue",
+          "Setup and facilate sales meetings with current and potential clients"
         ]
       },
       {
         "company": "Fastcomm Inc",
         "location": "Waterford, MI",
         "title": "Telecommunication Technician",
-        "summary": "",
         "dates": "Jan 2007 – Apr 2011",
+        "summary": "Low Voltage Technician, focused on installing, servicing, troubleshooting, or Testing telephone ( POTS ), ethernet, coaxial, and fiber lines, termination and connected devices",
         "responsibilities": [
-          "Working as a technician here is when I got my feet wet in the technology sector. In my role, I would service and install entire physical networks and phone lines for commercial industries."
+          "Fullfill work orders as they were assgned to me",
+          "Troubleshoot, install, service or maintain Telecommunications infrastructure as outlined in the scope of the work order",
+          "Travel to, or otherwise arrive onsite to preform work duties"
         ]
       }
     ],
