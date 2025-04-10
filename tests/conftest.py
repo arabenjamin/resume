@@ -50,7 +50,7 @@ def mock_json_file(tmp_path):
                 "dates": "February 1995 - June 2007",
                 "summary": "I was a one man show, who carrried ",
                 "responsibilities": [
-                    "Microverse Battery: Creation of self-sustaining universes within smaller universes to power technology."
+                    "Microverse Battery: Creation of self-sustaining universes within smaller universes to power technology.",
                     "Updated portal gun protype to interface with upgraded pronton pack",
                     "Reversed engineered Aperture Labs Portal Gun with rifle form factor, to deliver a single handed, pistol like form factor",
                     "Reconstructed the Proton Pack to intergrate both the Arc Reactor, and the Flux Capacitor",
