@@ -31,7 +31,7 @@ class Parser:
     
     def get_markdown(self):
 
-        with open("./docs/resume.md", 'w') as f:
+        with open("./docs/index.md", 'w') as f:
 
             f.write(f"# {self.resume.name}\n\n")
             f.write(f"**Phone:** {self.resume.contact.phone}  \n")
