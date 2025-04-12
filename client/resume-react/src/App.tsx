@@ -1,8 +1,15 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { SetStateAction, useEffect, useState } from 'react'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
+import Accordion from 'react-bootstrap/Accordion';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import MyNavBar from './components/NavBar';
+import MyCarousel from './components/Carousel';
 import Contact from './components/Contact';
 import Summary from './components/Summary';
 import Experience from './components/Experience';
@@ -52,14 +59,15 @@ interface Resume {
     location: string;
     title: string;
     dates: string;
+    summary: string;
     responsibilities: string[];
   }[];
   skills: Record<string, string[]>;
 }
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [resume, setResume] = useState<Resume | null>(null);
+  const [currentView, setCurrentView] = useState('About');
+  const [resume, setResume, ] = useState<Resume | null>(null);
 
   useEffect(() => {
     // Fetch the resume.json file
@@ -73,30 +81,31 @@ function App() {
     return <div>Loading...</div>;
   }
 
+  const handleButtonClick = (view: SetStateAction<string>) => {
+    setCurrentView(view);
+  };
+
+
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>{resume.name}'s Resume</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-      <div className="App">
-        <Contact {...resume.contact} />
-        <Summary summary={resume.summary} />
-        <Experience experience={resume.experience} />
-      <Skills skills={resume.skills} />
-    </div>
-    </>
+  
+      <>
+        {/* Header TODO: needs readjusting */}
+        <Container  >
+          <MyNavBar handleViewState={handleButtonClick} />
+        </Container>
+        <br />
+
+        <Container>
+          {/* Set view based on active tab */}
+          {currentView === 'About' && <MyCarousel />}
+          {currentView === 'Experience' && <Experience experience={resume.experience} />}
+          {currentView === 'Skills' && <Skills skills={resume.skills} />}
+          {currentView === 'Contact' && <Contact {...resume.contact}/>}
+        </Container>
+      </>
   )
 }
+
+
 
 export default App
