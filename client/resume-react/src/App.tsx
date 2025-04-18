@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import MyNavBar from './components/NavBar';
-import MyCarousel from './components/Carousel';
+import About from './components/About';
 import Contact from './components/Contact';
 import Summary from './components/Summary';
 import Experience from './components/Experience';
@@ -90,17 +90,23 @@ function App() {
   
       <>
         {/* Header TODO: needs readjusting */}
-        <Container  >
-          <MyNavBar handleViewState={handleButtonClick} />
-        </Container>
-        <br />
 
+        <MyNavBar handleViewState={handleButtonClick} />
+   
+        <br/>
         <Container>
-          {/* Set view based on active tab */}
-          {currentView === 'About' && <MyCarousel />}
-          {currentView === 'Experience' && <Experience experience={resume.experience} />}
-          {currentView === 'Skills' && <Skills skills={resume.skills} />}
-          {currentView === 'Contact' && <Contact {...resume.contact}/>}
+          <Row>
+            <Col data-bs-theme="dark">
+              {/* Set view based on active tab */}
+              {currentView === 'Experience' && <Experience experience={resume.experience} />}
+              {currentView === 'Skills' && <Skills skills={resume.skills} />}
+              {currentView === 'Projects' && <About />} {/* TODO: This needs content */}
+              {currentView === 'More' && <About />} {/* TODO: This needs content */}
+              {currentView === 'About' && <About />} 
+              {currentView === 'Contact' && <Contact {...resume.contact}/>}
+            </Col>
+          </Row>
+
         </Container>
       </>
   )

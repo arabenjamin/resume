@@ -2,11 +2,22 @@ import Container from 'react-bootstrap/Container';
 
 
 import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col'
 
+type Props = {
+    img: string;
+}
 
-function CarouselImage(){
+function CarouselImage(props: Props){
+
     return (
-        <Image style={{ objectFit: "cover" }} className="d-block w-100 " src="/RocketPortalGunProtonPack.jpeg" fluid roundedCircle />
+        <Row>
+            <Col >
+                <Image src={props.img} fluid rounded/>
+            </Col>
+        </Row>
+        
     );
 };
 

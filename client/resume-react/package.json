@@ -4,15 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "npm run dev -- --open --host pcmain.local --port 3000",
-    "dev": "vite --host",
+    "start": "npm run dev -- --open --port 3000",
+    "dev": "vite --host pcmain.local",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

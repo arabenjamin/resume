@@ -118,65 +118,69 @@
       }
     ],
     "skills": {
-      "languages": [
-        "Python (10 years)",
-        "Golang (6 years)",
-        "Javascript/Typescript (6 years)",
-        "C/C++",
-        "Rust"
+      "frontend":[
+        {"name":"Node"},
+        {"name":"Npm"},
+        {"name":"Yarn"},
+        {"name":"React"},
+        {"name":"Vue"},
+        {"name":"TypeScript"},
+        {"name":"JavaScript"},
+        {"name":"Bootstrap"},
+        {"name":"CSS3"},
+        {"name":"HTML5"},
+        {"name":"Next.js"},
+        {"name":"jquery"}
       ],
-      "security": [
-        "SSL",
-        "Encryption"
+      "backend":[
+        {"name":"Bash"},
+        {"name":"Linux"},
+        {"name":"Golang"},
+        {"name":"Python"},
+        {"name":"Rust"},
+        {"name":"Django"},
+        {"name":"Flask"},
+        {"name":"FastAPI"},
+        {"name":"Cplus"},
+        {"name":"DuckDB"},
+        {"name":"MySQL"},
+        {"name":"SQLite3"},
+        {"name":"PostgreSQL"},
+        {"name":"MongoDB"},
+        {"name":"Docker"},
+        {"name":"DockerCompose"},
+        {"name":"Kubernetes"},
+        {"name":"AWS"},
+        {"name":"GoogleCloud"},
+        {"name":"Azure"}    
       ],
-      "web_servers": [
-        "Nginx",
-        "Apache"
-      ],
-      "web_frameworks": [
-        "Node",
-        "React",
-        "Vue",
-        "Django",
-        "Flask",
-        "FastAPI"
-      ],
-      "databases": [
-        "DuckDB",
-        "MySQL/MariaDB",
-        "SQLite3",
-        "PostgreSQL",
-        "MongoDB",
-        "Redis"
-      ],
-      "os_platform": [
-        "Linux",
-        "Windows",
-        "IoT",
-        "Embedded Systems"
-      ],
-      "vm_containers_cloud": [
-        "Docker",
-        "Docker Compose",
-        "Kubernetes",
-        "VirtualBox",
-        "VMware",
-        "AWS",
-        "Google Cloud",
-        "Azure"
-      ],
-      "robotics": [
-        "Microcontrollers",
-        "Atmega328p",
-        "ESP8266",
-        "I2C, SPI, UART",
-        "Troubleshooting microcontrollers and their corresponding circuits"
-      ],
-      "robotics_projects": [
-        "Connected a Wii chuck to a robotic arm",
-        "Built restful service to run on raspberry pi to remotely communicate with small rover",
-        "Used an accelerometer to keep robotic arm level",
-        "Setup OpenCV on Raspberry Pi, used webcam and ML to find humans, mapped visual coordinates to pan/tilt servos to keep humans in the center of the screen."
+      "tools":[
+        {"name":"Github"},
+        {"name":"GitLab"},
+        {"name":"Git"},
+        {"name":"Insomnia"},
+        {"name":"Vim"},
+        {"name":"VScode"},
+        {"name":"cli"},
+        {"name":"Postman"},
+        {"name":"Gimp"},
+        {"name":"Blender"},
+        {"name":"Chrome"},
+        {"name":"Firfox"},
+        {"name":"Lens"},
+        {"name":"Make"},
+        {"name":"CMake"},
+        {"name": "RaspberryPi"},
+        {"name": "Esp32"},
+        {"name": "Arduino"},
+        {"name":"VirtualBox"},
+        {"name":"VMware"},
+        {"name":"Gpg2"},
+        {"name":"ssh"}
+
+
       ]
     }
+
+
   }

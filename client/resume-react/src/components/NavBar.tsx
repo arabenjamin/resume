@@ -1,5 +1,7 @@
 import MyLogo from './MyLogo';
 import Container from 'react-bootstrap/esm/Container';
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
@@ -8,24 +10,39 @@ function MyNavBar({handleViewState}){
       handleViewState(view);
     };
     return(
-        
-        <Navbar expand="lg" className="fluid navbar-dark bg-dark" >
-          <Container>
-            <Navbar.Brand href="#home" className='navbar-dark bg-dark'>
-              <MyLogo  />
-                &nbsp; &nbsp;Ara Sheperdigian
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link onClick={() => handleClick('About')} >About</Nav.Link>
-                <Nav.Link onClick={() => handleClick('Experience')} >Experience</Nav.Link>
-                <Nav.Link onClick={() => handleClick('Skills')} >Skils</Nav.Link>
-                <Nav.Link onClick={() => handleClick('Contact')} >Contact</Nav.Link>
-              </Nav> 
-            </Navbar.Collapse>
-            </Container>
-        </Navbar>
+        <Container className='shadow-lg'>
+          <Row>
+            <Col>
+              <Navbar expand="lg" className=" navbar-dark bg-dark shadow-lg rounded" >
+                <Navbar.Brand href="#home" className='navbar-dark bg-dark'>
+                  <MyLogo  />
+                    &nbsp; &nbsp;Ara Sheperdigian
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Collapse id="basic-navbar-nav " className="justify-content-end">
+                  <Nav className="justify-content-end">
+                    <Nav.Item>
+                      <Nav.Link onClick={() => handleClick('About')} >About</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link onClick={() => handleClick('Experience')} >Experience</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link onClick={() => handleClick('Skills')} >Skils</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link className='diabled' >Education</Nav.Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                      <Nav.Link onClick={() => handleClick('Contact')} >Contact</Nav.Link>
+                    </Nav.Item>
+
+                  </Nav> 
+                </Navbar.Collapse>
+              </Navbar>
+            </Col>
+          </Row>
+        </Container>
     );
 }
 

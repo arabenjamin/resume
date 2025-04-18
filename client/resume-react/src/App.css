@@ -1,16 +1,8 @@
 
 
+/* Not Currently in use*/
 
-.card {
 
-  padding: .75rem 1rem;
-  border-width: 0;
-  border-radius: 0;
-}
-
-.read-the-docs {
-  color: #888;
-}
 
 .App-logo {
   animation: App-logo-spin infinite 60s linear;
@@ -31,46 +23,6 @@
   filter: drop-shadow(0 0 2em #6166fbaa);
 }
 
-.intro {
-  color: #ffffff;
-}
-
-.skills {
-  color:#9acc14
-}
-
-
-.resume {
-  width:auto;
-  height:auto;
-}
-
-/* Basic height for smaller screens */
-.carousel {
-  height: 400px; /* Default height */
-}
-
-/* Adjust height for larger screens */
-@media (min-width: 768px) {
-  .carousel {
-    height: 600px; /* Increased height */
-  }
-}
-
-.carousel-item img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-/*
-.rocket img {
-
-  width: auto;
-  height: auto; 
-  margin: auto; 
-  object-fit: cover; 
-} */
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -78,4 +30,81 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*Carousel Caption*/
+/*
+.intro {
+  color: #ffffff;
+}
+*/
+.skills {
+  color:#9acc14
+}
+
+
+.MyCarousel {
+
+  width:auto;
+  height:25%;
+
+
+}
+
+.carousel-indicators,
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: #ffffff;; /* Change the color and transparency */
+}
+.carousel-caption {
+  color: #ffffff;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 75%;
+  width: 100%;
+}
+
+.modal-backdrop {
+  opacity: 0.1;
+  --bs-backdrop-opacity: 0.1;
+}
+
+.scrollable-list-group-container {
+  height: 50vh;
+  overflow-y: auto;
+  /* Other styles as needed */
+}
+
+.skils-scrollable-list-group-container {
+  height: 15vh;; /* Or any desired height */
+  overflow-y: auto;
+  /* Other styles as needed */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 300px;
+  height: auto;
+  
+}
+
+.about_img_container-card-img img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  max-height: 50%;
 }
