@@ -5,12 +5,19 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import ListGroup from 'react-bootstrap/ListGroup';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import Button from 'react-bootstrap/Button';
+
+import Widget from './MyWidget'; 
 
 import Image from 'react-bootstrap/Image';
+import React, { useState } from 'react';
+
 import { FaAws, FaPython, FaNode, FaReact, FaVuejs, FaFlask, FaRust, FaLinux, FaDocker  } from 'react-icons/fa';
 import { SiGnubash,SiJavascript,SiPostgresql, SiFastapi,SiGooglecloud, SiKubernetes, SiTypescript, SiCplusplus, SiDuckdb, SiMysql, SiSqlite, SiMongodb  } from "react-icons/si";
 import { DiDjango } from "react-icons/di";
 import { FaGolang } from "react-icons/fa6";
+import { GiSkills } from "react-icons/gi";
+
 
 interface SkillsProps {
     skills: Record<string, string[]>;
@@ -50,20 +57,44 @@ const DynamicIcon = ({ name }) => {
 };
 
 const Skills = ({ skills }: SkillsProps) => {
-  
 
-  
+
+  const [items, setItems] = useState([]);
+
+  const handleClick = () => {
+    const newItem = {
+      radius:50,
+    };
+    setItems([...items, newItem]);
+  };
+
+  if (items.length > 6){
+    // Start over
+    setItems([]);
+  }
+
   return (
     <>
 
 
         <Card >
 
-          <Card.Header>
+          <Card.Header className='text-center fs-2'>
+          <GiSkills />
             Skills
           </Card.Header>
           <Card.Title className='text-center'>
-            The list below is not an exhuastive list, but should give you an idea of the work I do best.
+            <Row>
+            
+              <Col>
+                <Widget blinks={items}  />
+                <Button className="btn-primary" onClick={handleClick}>Click Me !</Button>
+              </Col>
+              <Col className='text-center text-align-center'>
+                The list below is not an exhuastive list, but should give you an idea of the work I do best.
+              </Col>
+            
+            </Row>
           </Card.Title>
           <Card.Body >
             <Container>
@@ -107,7 +138,7 @@ const Skills = ({ skills }: SkillsProps) => {
               </Row>
             </Container>
           </Card.Body>
-          <Card.Footer>
+          <Card.Footer className='text-center'>
             Something for the Bottom of the page
           </Card.Footer>
         </Card>   

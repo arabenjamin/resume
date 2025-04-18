@@ -51,7 +51,22 @@ interface Job {
       <>
         
         <Card >
-          <Card.Header className='text-center fs-1'><FaHistory />Experience</Card.Header>
+          <Card.Header >
+             
+              <Row className='fs-2'>
+                <Col className='text-end float-end'>
+                  <FaHistory />
+                </Col>
+              
+                <Col className='float-start'>
+                  Experience
+                </Col>
+                
+              </Row>
+
+              
+            
+            </Card.Header>
           
           <Container>
             <Row>
@@ -86,9 +101,10 @@ interface Job {
                   <Accordion >
                     <Accordion.Item eventKey="0">
                       <Accordion.Header >
-                          <FaHistory size="2em"/>
+                        
+                          <FaHistory size="1.5em"/>
                           <Col  className=" w-auto p-3">
-                            <h3>Employment History</h3>
+                            <h5>Employment History</h5>
                           </Col>
                           <Col className="justify-content-end w-auto p-3" >
                             <Badge bg="primary" pill className='float-end'>  

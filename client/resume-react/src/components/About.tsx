@@ -12,7 +12,7 @@ function MyCarousel() {
     return (
         
         <Card className="mb-2">
-            <Card.Header className='text-center fs-1'>
+            <Card.Header className='text-center fs-2'>
                 About Me
             </Card.Header>
             <Container>

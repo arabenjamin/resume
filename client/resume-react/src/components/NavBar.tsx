@@ -10,10 +10,10 @@ function MyNavBar({handleViewState}){
       handleViewState(view);
     };
     return(
-        <Container className='shadow-lg'>
+        <Container className='shadow-lg' >
           <Row>
             <Col>
-              <Navbar expand="lg" className=" navbar-dark bg-dark shadow-lg rounded" >
+              <Navbar expand="lg" className=" navbar-dark bg-dark shadow-lg rounded border border-secondary-subtle">
                 <Navbar.Brand href="#home" className='navbar-dark bg-dark'>
                   <MyLogo  />
                     &nbsp; &nbsp;Ara Sheperdigian
