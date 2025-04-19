@@ -58,7 +58,7 @@ const DynamicIcon = ({ name }) => {
 
 const Skills = ({ skills }: SkillsProps) => {
 
-
+  // set items as an empty list, and a method to add items to the list
   const [items, setItems] = useState([]);
 
   const handleClick = () => {
@@ -85,17 +85,22 @@ const Skills = ({ skills }: SkillsProps) => {
           </Card.Header>
           <Card.Title className='text-center'>
             <Row>
-            
-              <Col>
-                <Widget blinks={items}  />
-                <Button className="btn-primary" onClick={handleClick}>Click Me !</Button>
-              </Col>
               <Col className='text-center text-align-center'>
-                The list below is not an exhuastive list, but should give you an idea of the work I do best.
+                  Review my skills below
               </Col>
+              <Col>
+                
+                <Button className="btn-primary" onClick={handleClick}>Click Me !</Button>
+                <Widget blinks={items}  />
+              </Col>
+
             
             </Row>
           </Card.Title>
+          <Card.Text className='text-center text-align-center'>
+
+          The list below is not an exhuastive list, but should give you an idea of the work I do best.
+          </Card.Text>
           <Card.Body >
             <Container>
               <Row >

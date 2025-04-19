@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import CarouselImage from './CarouselImage';
+
 
 
 function MyCarousel() {
@@ -22,6 +22,7 @@ function MyCarousel() {
                     <Col>
                         <Card.Img  variant='top' className='img_container' src='/SelfPhoto-landscape-sm.png'></Card.Img>
                     </Col>
+                    
                     <Col >
                         
                         <Card.Title className='text-center fs-1'>

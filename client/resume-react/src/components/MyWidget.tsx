@@ -35,11 +35,13 @@ function Widget(props){
     )
   
     return(
-      <svg className="icon2" width={width} height={width} xmlns="http://www.w3.org/2000/svg" >
+      <svg className="icon2"  xmlns="http://www.w3.org/2000/svg" >
         <g>
-          <circle id="inner_circle" stroke="#000000" opacity="0.25" r="50"  cy={width/2} cx={width/2} strokeLinecap="null" strokeLinejoin="null" strokDasharray="null" strokeWidth="5" fill="#19a01b"/>
+          <circle id="outer_circle" className="outer_circle" stroke="#000000" opacity="0.1" r="100"  cy={width/2} cx={width/2} strokeLinecap="null" strokeLinejoin="null" strokDasharray="null" strokeWidth="5" />
           {dots}
-          <circle id="outer_circle" stroke="#000000" opacity="0.1" r="100"  cy={width/2} cx={width/2} strokeLinecap="null" strokeLinejoin="null" strokDasharray="null" strokeWidth="5" fill="#19a01b"/>
+          <circle id="inner_circle" className="inner_circle" stroke="#000000" opacity="0.25" r="50"  cy={width/2} cx={width/2} strokeLinecap="null" strokeLinejoin="null" strokDasharray="null" strokeWidth="5" />
+
+       
         </g>
       </svg>
     )

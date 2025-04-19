@@ -53,44 +53,40 @@ interface Job {
         <Card >
           <Card.Header >
              
-              <Row className='fs-2'>
-                <Col className='text-end float-end'>
-                  <FaHistory />
-                </Col>
               
-                <Col className='float-start'>
-                  Experience
+                
+                <Col className='text-center fs-1'>
+                 Experience
                 </Col>
                 
-              </Row>
-
               
             
             </Card.Header>
           
           <Container>
+
+            <Row>
+              <Col className='image-container'> 
+                <Card.Img variant='top' className='img_container' src='/SelfPhoto-landscape-sm.png'></Card.Img>
+              </Col>
+            </Row>
+            
+            
             <Row>
               <Col>
                 <Card.Title className='text-center'>
-                  I am a fullstack engineer with a decade of experience building, testing and deploying both frontend and backend services, 
-                  micro-services, API endpoints, and other cloud systems using Docker, Python, Go, both SQL and NoSQL. 
-                  I'm not really a front-end developer. But I do have experience writing in  Javascript/TypeScript, 
-                  and I am pretty familiar with Node. I’ve used React, Vue and jquery a fair amount in the past.
+                  Rich and diverse background working for small, medium, and large employers.
                 </Card.Title>
               </Col>
             </Row>
-            {/*
-            <Row>
-              <Col className='image-container'> 
-                <Card.Img variant='top' src='/NotRocket.png'></Card.Img>
-              </Col>
-            </Row>
-            */}
             
             <Row>
               <Col>
                 <Card.Text className='text-center'>
-                  I have a rich and diverse background working for small, medium, and large employers.
+                  I am a fullstack engineer with a decade of experience building, testing and deploying both frontend and backend services, 
+                  micro-services, API endpoints, and other cloud systems using Docker, Python, Go, both SQL and NoSQL. 
+                  I'm not really a front-end developer. But I do have experience writing in  Javascript/TypeScript, 
+                  and I am pretty familiar with Node. I’ve used React, Vue and jquery a fair amount in the past.                  
                 </Card.Text>              
               </Col>
             </Row>
@@ -172,7 +168,7 @@ interface Job {
 
           </Container>  
 
-           <Card.Footer>
+           <Card.Footer className='float-center'>
               <Button>Download My Full Resume</Button>
            </Card.Footer>     
         </Card>

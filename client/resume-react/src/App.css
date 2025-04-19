@@ -1,16 +1,5 @@
 
 
-/* Not Currently in use*/
-
-
-
-.App-logo {
-  animation: App-logo-spin infinite 60s linear;
-  height: 40vmin;
-  pointer-events: none;
-  will-change: filter;
-  transition: filter 300ms;
-}
 
 .mylogo{
   animation: App-logo-spin infinite 20s linear;
@@ -20,7 +9,7 @@
 }
 
 .mylogo:hover {
-  filter: drop-shadow(0 0 2em #6166fbaa);
+  filter: drop-shadow(0 0 5em #6166fbaa);
 }
 
 @keyframes App-logo-spin {
@@ -32,38 +21,9 @@
   }
 }
 
-/*Carousel Caption*/
-/*
-.intro {
-  color: #ffffff;
-}
-*/
+/* This can be rethought */
 .skills {
   color:#9acc14
-}
-
-
-.MyCarousel {
-
-  width:auto;
-  height:25%;
-
-
-}
-
-.carousel-indicators,
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  color: #ffffff;; /* Change the color and transparency */
-}
-.carousel-caption {
-  color: #ffffff;
-}
-
-.carousel-item img {
-  object-fit: cover;
-  height: 75%;
-  width: 100%;
 }
 
 .modal-backdrop {
@@ -107,4 +67,63 @@ img {
   align-items: center;
   max-width: 50%;
   max-height: 50%;
+}
+
+
+.inner_circle {
+
+  animation: glow infinite 1s alternate;
+  z-index: 1;
+  fill: #19a01b;
+}
+
+@keyframes glow {
+  from {
+    /*box-shadow: 0 0 30px -30px #27eb04;*/
+    filter: drop-shadow(0 0 1em #1973a0 );
+  }
+  to {
+    /*box-shadow: 0 0 30px 30px #1973a0;*/
+    filter: drop-shadow(0 0 5em #1973a0 );
+  }
+}
+
+.inner_circle:hover {
+  animation: glow infinite 1s alternate;
+  r: 25%;
+  fill : #1973a0 !important;
+  filter: drop-shadow(0 0 5em #1973a0 );
+}
+
+
+
+.outer_circle {
+  opacity: .1;
+  fill: #19a01b;
+}
+
+.outer_circle:hover {
+  r: 30%;
+  fill : #1973a0 !important;
+  filter: drop-shadow(0 0 2em #27eb04 );
+}
+
+
+.icon2 {
+  animation: inner-circle-spin infinite 20s linear;
+  
+  will-change: filter;
+  transition: filter 300ms;
+
+  width: 300px;
+  height: 300px;
+
+}
+@keyframes inner-circle-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
