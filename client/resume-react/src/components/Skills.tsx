@@ -59,18 +59,18 @@ const DynamicIcon = ({ name }) => {
 const Skills = ({ skills }: SkillsProps) => {
 
   // set items as an empty list, and a method to add items to the list
-  const [items, setItems] = useState([]);
+  const [leaves, setLeaves] = useState(0);
+
+
 
   const handleClick = () => {
-    const newItem = {
-      radius:50,
-    };
-    setItems([...items, newItem]);
+
+    setLeaves(leaves+1);
   };
 
-  if (items.length > 6){
+  if (leaves > 6){
     // Start over
-    setItems([]);
+    setLeaves(0);
   }
 
   return (
@@ -91,7 +91,7 @@ const Skills = ({ skills }: SkillsProps) => {
               <Col>
                 
                 <Button className="btn-primary" onClick={handleClick}>Click Me !</Button>
-                <Widget blinks={items}  />
+                <Widget radius={50} width={300} leaves={leaves}  />
               </Col>
 
             
