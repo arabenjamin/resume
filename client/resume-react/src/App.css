@@ -1,0 +1,149 @@
+
+
+
+.mylogo{
+  animation: App-logo-spin infinite 20s linear;
+  pointer-events: none;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.mylogo:hover {
+  filter: drop-shadow(0 0 5em #6166fbaa);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* This can be rethought */
+.skills {
+  color: #9acc14;
+}
+
+.modal-backdrop {
+  opacity: 0.1;
+  --bs-backdrop-opacity: 0.1;
+}
+
+.scrollable-list-group-container {
+  height: 30vh;
+  overflow-y: auto;
+  /* Other styles as needed */
+}
+
+.skils-scrollable-list-group-container {
+  height: 15vh;; /* Or any desired height */
+  overflow-y: auto;
+  /* Other styles as needed */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 300px;
+  height: auto;
+  
+}
+
+.about_img_container-card-img img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+
+.icon2 {
+  animation: inner-circle-spin infinite 20s linear;
+  
+  will-change: filter;
+  transition: filter 300ms;
+  border-radius: 100%;
+}
+
+
+.inner_circle {
+  stroke: #000000;
+  stroke-width: 5;
+  opacity: .1;
+  z-index: 1;
+  fill: #9acc14;
+}
+
+.outer_circle {
+  stroke: #000000;
+  stroke-width: 5;
+  opacity: .1;
+  fill: #19a01b;
+}
+
+.inner_circle:hover {
+  animation: glow infinite 1s alternate;
+  fill : #9acc14 !important;
+  filter: drop-shadow(0 0 5em #9acc14 );
+  stroke-width: 0;
+}
+
+.outer_circle:hover {
+  animation: glow infinite 1s alternate;
+  fill : #e6ff04 !important;
+  filter: drop-shadow(0 0 2em #27eb04 );
+  stroke-width: 0;
+}
+
+.leafdot {
+  fill:#ffffff
+}
+
+.leaf {
+  opacity: .25;
+  stroke: #000000;
+  stroke-width: 5;
+  fill:#0c4e6d;
+}
+
+.leaf:hover{
+  animation: glow infinite 1s alternate;
+  fill: #9acc14;
+  stroke-width: 0;
+
+}
+
+
+@keyframes inner-circle-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes glow {
+  from {
+    /*box-shadow: 0 0 30px -30px #27eb04;*/
+    filter: drop-shadow(0 0 1em #1da019 );
+  }
+  to {
+    /*box-shadow: 0 0 30px 30px #1973a0;*/
+    filter: drop-shadow(0 0 5em #ffee03 );
+  }
+}
+

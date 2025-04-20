@@ -1,0 +1,185 @@
+{
+    "name": "Ara Sheperdigian",
+    "contact": {
+      "phone": "(248) 238-8615",
+      "email": "ara.benjamin@gmail.com",
+      "github": "https://github.com/arabenjamin",
+      "linkedin": "https://www.linkedin.com/in/ara-sheperdigian-a751a418",
+      "website": "arabenjamin.github.io/resume"
+    },
+    "summary": "Energetic, innovative and competent software developer and engineer offering a rich mixture of experience and success in a variety of work environments.",
+    "objective": "I am looking to put my work experience and my passion for programming and technology to good use to help ensure success for the company or institution that I’ll be a part of.",
+    "experience": [
+      {
+        "company": "Consultant/Contractor",
+        "location": "Remote",
+        "title": "Freelance Software Engineer",
+        "dates": "February 2023 - Present",
+        "summary": "",
+        "responsibilities": [
+          
+        ]
+      },
+      {
+        "company": "HP",
+        "location": "Boise, ID (Remote via Experis)",
+        "title": "Software Engineer",
+        "dates": "May 2021 - February 2023",
+        "summary": "",
+        "responsibilities": [
+          "Worked as a software engineer in R&D on the Color & Imaging team to help build a cloud diagnostic system to review physical prints from a physical printer to determine the health of the physical components of the printer.",
+          "Built a tiny-URL micro service in Python using Django to shorten diagnostic api endpoints, to be rendered on low res screen on a printer as a QR code.",
+          "Built in Python mock services to enable others to write code for parts where integration could not be implemented.",
+          "Mocked physical printer apis that had yet to be implemented on the printer.",
+          "Mocked server side cloud endpoints for unit testing.",
+          "Updated printer simulator in C++ to handle api endpoints on the printer, including unit tests.",
+          "Wrote standalone scripts for manual testers."
+        ]
+      },
+      {
+        "company": "Humana Insurance",
+        "location": "Louisville, KY (Remote, via Cognizant, via E-Solutions)",
+        "title": "Software Engineer",
+        "dates": "July 2020 - January 2021 (6 month Contract)",
+        "summary": "",
+        "responsibilities": [
+          "Worked as a devops engineer to support an internal service called Onramp, that helps to automate and maintain technical resources, and resource groups for the business.",
+          "Developed, tested and deployed api endpoints to extend features to address business evolving business needs for automating resource group creation in Azure Active Directory.",
+          "Used Docker to build dev, test and prod images to be deployed in Kubernetes.",
+          "Used Python3 and Bottle to build, test, and deploy REST API endpoints for new features in the Onramp Platform."
+        ]
+      },
+      {
+        "company": "ElTec Systems, LLC",
+        "location": "Seattle, WA",
+        "title": "Senior IT Professional",
+        "dates": "Oct 2015 - June 2020",
+        "summary": "",
+        "responsibilities": [
+          "Moving to Eltec Systems gave me the opportunity to move away from account management and exercise my passion for technology. I was originally hired for a temporary data entry position. I was given a project to manually find all the elevators that needed service, potential sales opportunities for the company. I impressed the owner with creating a script that quickly sorted the information into a spreadsheet in seconds. This led to me being hired full time where I manage the IT networks, build internal and external facing web applications that help streamline the business, and data mining and reporting on service performance.",
+          "Created and developed in Golang a web base using AWS route planner our dispatch coordinator and service management use to see all the routes of the technicians, instead of manually plotting out the routes of each technician.",
+          "Created and developed in Golang a web app using AWS that maintains a database of all inventory items that need to be picked up and delivered. Allows communication between the supplier and driver on when the parts have been delivered and records them into the database.",
+          "Created and developed in Golang a client facing app using AWS that allows our clients to place service requests for their buildings. And automatically sends the service request to the correct service mechanic.",
+          "Build, test and deploy and backend RESTFUL api to handle user authentication with golang.",
+          "Validate username and password fields with golang.",
+          "Lookup user in database, validate password with golang.",
+          "Returned a jwt token."
+        ]
+      },
+      {
+        "company": "HCL America",
+        "location": "Redmond, WA",
+        "title": "Fulfillment Manager",
+        "dates": "Oct 2013 – Sept 2015",
+        "summary": "I worked as a Fulfillment Manager to build and maintain a large pool of manual software testers that would be utilized by our client based on daily demands.",
+        "responsibilities": [
+          "created and optimized process that allowed us to efficiently schedule the software testers for the following day based on demands and ability to communicate to the software testers for quick turnaround.",
+          "Define project deliverables, timeline, and resources required for related projects.",
+          "Compiled project status reports and resolve any conflicts that would arise."
+        ]
+      },
+      {
+        "company": "Law Office of Joseph P. Saulski",
+        "location": "Waterford, MI",
+        "title": "IT Office Manager / Technical Solutions Artist / Paralegal Admin /  Marketing solutions ",
+        "dates": "Feb 2012 – Aug 2013",
+        "summary": "I worked for an attorney, and I had many titles. I was hired specificaly becasue I was very technically inclined. I fullfilled paralegal work when needed.",
+        "responsibilities": [
+          "Built and maintained a client info database using SQLite3 and python, as well as managing the real physical records",
+          "Developed a web app to document and store new client information into a database",
+          "Developed Marketing soluitons utilizing SEO and SEM, Digital media, social media",
+          "Developed and executed marketing campaigns such as buying branded pens, and leaving them in places we thought our clients might visit."
+        ]
+      },
+      {
+        "company": "RCS Technology of Michigan LLC",
+        "location": "Waterford, MI",
+        "title": "Technical Account Manager/ Solutions Technician",
+        "dates": "Apr 2011 – Jan 2012",
+        "summary": "Sales role Working in a start-up that offered managed cloud IT solutions for small to medium sized businesses.I built relationships and solutions to bring in a new revenue streams to the company.",
+          
+        "responsibilities": [
+          "Building and maintaing a CRM, always looking to build and maintian a sales pipeline",
+          "convert pipeline into sales revenue",
+          "Setup and facilate sales meetings with current and potential clients"
+        ]
+      },
+      {
+        "company": "Fastcomm Inc",
+        "location": "Waterford, MI",
+        "title": "Telecommunication Technician",
+        "dates": "Jan 2007 – Apr 2011",
+        "summary": "Low Voltage Technician, focused on installing, servicing, troubleshooting, or Testing telephone ( POTS ), ethernet, coaxial, and fiber lines, termination and connected devices",
+        "responsibilities": [
+          "Fullfill work orders as they were assgned to me",
+          "Troubleshoot, install, service or maintain Telecommunications infrastructure as outlined in the scope of the work order",
+          "Travel to, or otherwise arrive onsite to preform work duties"
+        ]
+      }
+    ],
+    "skills": {
+      "frontend":[
+        {"name":"TypeScript", "proficiency":70 },
+        {"name":"JavaScript", "proficiency":85 },
+        {"name":"Node", "proficiency":60 },
+        {"name":"Npm", "proficiency":50  },
+        {"name":"Yarn", "proficiency":50 },
+        {"name":"React", "proficiency":80 },
+        {"name":"Vue", "proficiency":60 },
+        {"name":"Bootstrap", "proficiency":75 },
+        {"name":"CSS3", "proficiency":75 },
+        {"name":"HTML5", "proficiency":100 },
+        {"name":"jquery", "proficiency":75 }
+      ],
+      "backend":[
+        {"name":"Bash", "proficiency":75 },
+        {"name":"cli", "proficiency":95 },
+        {"name":"Linux", "proficiency":95 },
+        {"name":"Golang", "proficiency":85 },
+        {"name":"Python", "proficiency":90 },
+        {"name":"Rust", "proficiency":60 },
+        {"name":"Django", "proficiency":75 },
+        {"name":"Flask", "proficiency":95 },
+        {"name":"FastAPI", "proficiency":95 },
+        {"name":"Cplus", "proficiency":60 },
+        {"name":"DuckDB", "proficiency":75 },
+        {"name":"MySQL", "proficiency":75 },
+        {"name":"SQLite3", "proficiency":75 },
+        {"name":"PostgreSQL", "proficiency":75 },
+        {"name":"MongoDB", "proficiency":75 },
+        {"name":"Docker", "proficiency":95 },
+        {"name":"DockerCompose", "proficiency":85 },
+        {"name":"Kubernetes", "proficiency":65 },
+        {"name":"AWS", "proficiency":75 },
+        {"name":"GoogleCloud", "proficiency":65 },
+        {"name":"Azure", "proficiency":65 }    
+      ],
+      "tools":[
+        {"name":"Github", "proficiency":95 },
+        {"name":"GitLab", "proficiency":85 },
+        {"name":"Git", "proficiency":90 },
+        {"name":"Insomnia", "proficiency":100 },
+        {"name":"Vim", "proficiency":99 },
+        {"name":"VScode", "proficiency":100 },
+        {"name":"Postman", "proficiency":75 },
+        {"name":"Gimp", "proficiency":75 },
+        {"name":"Blender", "proficiency":55 },
+        {"name":"Chrome", "proficiency":100 },
+        {"name":"Firefox", "proficiency":100 },
+        {"name":"Lens", "proficiency":60 },
+        {"name":"Make", "proficiency":70 },
+        {"name":"CMake", "proficiency":70 },
+        {"name":"RaspberryPi", "proficiency":95 },
+        {"name":"Esp32", "proficiency":65 },
+        {"name":"Arduino", "proficiency":95 },
+        {"name":"VirtualBox", "proficiency":75 },
+        {"name":"VMware", "proficiency":65 },
+        {"name":"Gpg2", "proficiency":85 },
+        {"name":"ssh", "proficiency":95 }
+
+
+      ]
+    }
+
+
+  }
