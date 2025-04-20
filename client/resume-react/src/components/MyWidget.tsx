@@ -12,8 +12,13 @@ function Widget(props){
     //console.log("blinks: ", blinks);
     var leaves = props.leaves;
     var width = props.width;
-    var radius = props.radius;
+    var radius = width/6;
     var nodes = [];
+
+    if (nodes.length > 6 || leaves > 6) {
+      nodes = [];
+      leaves = 0;
+    }
 
     //Calculates the center position of the node circle being drawn
     // on the circumference of the inner circle
@@ -38,12 +43,12 @@ function Widget(props){
         {/* Circle */}
         <circle id={"NodeCircle:"+String(dot.id)} className="leaf" r={dot.radius} cy={dot.y} cx={dot.x} />
         {/* Center Point of Circle */}
-        <circle id={"NodeDot:"+String(dot.id)} className="leaf" r={dot.radius/dot.radius} cy={dot.y} cx={dot.x} />
+        <circle id={"NodeDot:"+String(dot.id)} className="leafdot" r={dot.radius/dot.radius} cy={dot.y} cx={dot.x} />
       </React.Fragment>
     )
   
     return(
-      <svg className="icon2" width={width} height={width} xmlns="http://www.w3.org/2000/svg" >
+      <svg className="icon2 " width={width} height={width} xmlns="http://www.w3.org/2000/svg" >
         <g>
           <circle id="outer_circle" className="outer_circle"  r={width/3}  cy={width/2} cx={width/2}  />
           

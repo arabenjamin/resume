@@ -1,5 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -7,12 +5,12 @@ import Col from 'react-bootstrap/Col';
 
 
 
-function MyCarousel() {
+function About() {
 
     return (
         
         <Card className="mb-2">
-            <Card.Header className='text-center fs-2'>
+            <Card.Header className='text-center fs-1'>
                 About Me
             </Card.Header>
             <Container>
@@ -31,15 +29,15 @@ function MyCarousel() {
                         </Card.Title>
                         
                         <Card.Body className='text-center'>
-                            <p className='fs-3'>
+                            <Card.Text className='fs-3'>
                                 I'm Ara
-                            </p>
-                            <p>
+                            </Card.Text>
+                            <Card.Text>
                             I am a Fullstack Dev with a decade of experience building, testing and deploying web apps both frontend and backend, 
                             micro-services, API endpoints, and other cloud systems using Docker, Python, Go, both SQL and NoSQL. 
                             I'm not really a front-end developer. But I do have experience writing in  Javascript/TypeScript, 
-                            and I am pretty familiar with Node. I’ve used React, Vue and jquery a fair amount in the past.
-                            </p>
+                            and I am pretty familiar with Node. I've used React, Vue and jquery a fair amount in the past.
+                            </Card.Text>
                         </Card.Body>
         
                     </Col>
@@ -53,4 +51,4 @@ function MyCarousel() {
     );
 };
 
-export default MyCarousel;
+export default About;

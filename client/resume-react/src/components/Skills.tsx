@@ -9,51 +9,40 @@ import Button from 'react-bootstrap/Button';
 
 import Widget from './MyWidget'; 
 
-import Image from 'react-bootstrap/Image';
+
 import React, { useState } from 'react';
 
-import { FaAws, FaPython, FaNode, FaReact, FaVuejs, FaFlask, FaRust, FaLinux, FaDocker  } from 'react-icons/fa';
-import { SiGnubash,SiJavascript,SiPostgresql, SiFastapi,SiGooglecloud, SiKubernetes, SiTypescript, SiCplusplus, SiDuckdb, SiMysql, SiSqlite, SiMongodb  } from "react-icons/si";
+import { FaNpm, FaHtml5, FaCss3, FaBootstrap, FaGithub, FaAws, 
+  FaPython, FaNode, FaCode, FaGitAlt, FaLaptopCode, FaReact, FaVuejs, 
+  FaFlask, FaRust, FaLinux, FaDocker, FaYarn, FaGitlab  } from 'react-icons/fa';
+import { SiJquery, SiInsomnia, SiVim, SiGnubash,SiJavascript,SiPostgresql, SiFastapi,SiGooglecloud, SiKubernetes, SiTypescript, SiCplusplus, SiDuckdb, SiMysql, SiSqlite, SiMongodb  } from "react-icons/si";
 import { DiDjango } from "react-icons/di";
 import { FaGolang } from "react-icons/fa6";
-import { GiSkills } from "react-icons/gi";
-
+import { VscVscode } from "react-icons/vsc";
+import { HiCommandLine } from "react-icons/hi2";
 
 interface SkillsProps {
     skills: Record<string, string[]>;
 }
 
+
+
 const Icons = {
 
-  Python: FaPython,
-  Node:FaNode,
-  React: FaReact,
-  Vue: FaVuejs ,
-  JavaScript: SiJavascript,
-  TypeScript: SiTypescript,
-  Django: DiDjango,
-  FastAPI: SiFastapi,
-  Flask: FaFlask,
-  Golang: FaGolang,
-  Cplus:SiCplusplus,
-  Rust:FaRust,
-  DuckDB: SiDuckdb,
-  MySQL: SiMysql,
-  SQLite3: SiSqlite,
-  PostgreSQL:SiPostgresql,
-  MongoDB: SiMongodb,
-  Linux: FaLinux,
-  Docker: FaDocker,
-  Kubernetes: SiKubernetes,
-  AWS:FaAws,
-  GoogleCloud: SiGooglecloud,
-  Bash: SiGnubash
+  Python: FaPython, Node:FaNode,
+  React: FaReact, Vue: FaVuejs , JavaScript: SiJavascript, TypeScript: SiTypescript,
+  Bootstrap:FaBootstrap, Django: DiDjango, FastAPI: SiFastapi, Flask: FaFlask,
+  Golang: FaGolang, Cplus:SiCplusplus, Rust:FaRust, DuckDB: SiDuckdb, MySQL: SiMysql,
+  SQLite3: SiSqlite, PostgreSQL:SiPostgresql, MongoDB: SiMongodb, Linux: FaLinux,Docker: FaDocker,
+  Kubernetes: SiKubernetes, AWS:FaAws, GoogleCloud: SiGooglecloud, Bash: SiGnubash, Git:FaGitAlt,
+  Github: FaGithub, Vim: SiVim,Insomnia:SiInsomnia,VScode: VscVscode, CSS3:FaCss3, HTML5:FaHtml5,
+  jquery:SiJquery, cli:HiCommandLine, Npm:FaNpm, Yarn:FaYarn, GitLab:FaGitlab
 }
 
 
 const DynamicIcon = ({ name }) => {
   const IconComponent = Icons[name] || null; // Default to null if icon is not found
-  return IconComponent ? <IconComponent size="2em" /> : null;
+  return IconComponent ? <IconComponent style={{ marginRight: '8px' }} size="1em" /> : null;
 };
 
 const Skills = ({ skills }: SkillsProps) => {
@@ -77,30 +66,25 @@ const Skills = ({ skills }: SkillsProps) => {
     <>
 
 
-        <Card >
+
+
+        <Card className='skills'>
 
           <Card.Header className='text-center fs-2'>
-          <GiSkills />
-            Skills
+            <HiCommandLine style={{ marginRight: '8px' }}/> 
+              I am more than the sum of all my parts.
+              <FaCode style={{ marginLeft: '8px' }} /> 
           </Card.Header>
+
           <Card.Title className='text-center'>
-            <Row>
-              <Col className='text-center text-align-center'>
-                  Review my skills below
-              </Col>
-              <Col>
-                
-                <Button className="btn-primary" onClick={handleClick}>Click Me !</Button>
-                <Widget radius={50} width={300} leaves={leaves}  />
-              </Col>
-
-            
-            </Row>
+              Skills
           </Card.Title>
-          <Card.Text className='text-center text-align-center'>
 
-          The list below is not an exhuastive list, but should give you an idea of the work I do best.
+          <Card.Text className='text-center text-align-center'>
+              I don't think there is truly any way to capture all of my various skills and capablities on a sinlge page. 
+              The list below is not an exhuastive list, but should give you an idea of where I spend my time.
           </Card.Text>
+
           <Card.Body >
             <Container>
               <Row >
@@ -108,7 +92,7 @@ const Skills = ({ skills }: SkillsProps) => {
                       {Object.entries(skills).map(([category, skillList], index) => (
                         <Col>
                           <div key={index}>
-                              <Card border="secondary" >
+                              <Card className='skills' border="secondary" >
                               
                                 {/*<Card.Img variant="top" src="/NotRocket.png" />*/}
 
@@ -122,13 +106,19 @@ const Skills = ({ skills }: SkillsProps) => {
                                     </Card.Text>
 
                                 </Card.Body>
-                                <ListGroup className="list-group-flush scrollable-list-group-container ">
+                                <ListGroup className="list-group-flush scrollable-list-group-container skills">
                                   {skillList.map((skill, idx) => (
-                                    <ListGroup.Item key={idx}>
-                                      <Col>
-                                      <DynamicIcon  name={skill.name} /> {skill.name} 
-                                      <ProgressBar  now={60} />
-                                      </Col> 
+                                    <ListGroup.Item key={idx} className='skills'>
+                                      <Row>
+                                        <Col>
+                                          <DynamicIcon  name={skill.name} />  {skill.name}
+                                        </Col>
+                                        <Col>
+                                          
+                                           <ProgressBar style={{ marginRight: '8px'}} label={`${skill.proficiency}%`} now={skill.proficiency} /> 
+                                        </Col> 
+                                      </Row>
+
 
                                     </ListGroup.Item>
                                   ))}
@@ -144,9 +134,17 @@ const Skills = ({ skills }: SkillsProps) => {
             </Container>
           </Card.Body>
           <Card.Footer className='text-center'>
-            Something for the Bottom of the page
+            Something for the bottom of the page
           </Card.Footer>
         </Card>   
+
+        <Row>
+          <Col md={{ span: 6, offset: 4 }} className='float-center'>
+            {/* This is my self made custom widget */}
+            <Button className="btn-primary" onClick={handleClick}>Click Me !</Button>
+            <Widget width={200} leaves={leaves}  />
+          </Col>
+        </Row>
     </>
 
 

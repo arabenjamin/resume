@@ -31,7 +31,7 @@ function MyNavBar({handleViewState}){
                       <Nav.Link onClick={() => handleClick('Skills')} >Skils</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link className='diabled' >Education</Nav.Link>
+                      <Nav.Link onClick={() => handleClick('Education')} >Education</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link onClick={() => handleClick('Contact')} >Contact</Nav.Link>

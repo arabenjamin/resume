@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
-    allowedHosts: ["pcmain.local"],
+    allowedHosts: ["pcmain.local","localhost.local","gadgetlab.local"],
   }
 })

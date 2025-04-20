@@ -23,7 +23,7 @@
 
 /* This can be rethought */
 .skills {
-  color:#9acc14
+  color: #9acc14;
 }
 
 .modal-backdrop {
@@ -32,7 +32,7 @@
 }
 
 .scrollable-list-group-container {
-  height: 50vh;
+  height: 30vh;
   overflow-y: auto;
   /* Other styles as needed */
 }
@@ -84,7 +84,7 @@ img {
   stroke-width: 5;
   opacity: .1;
   z-index: 1;
-  fill: #19a01b;
+  fill: #9acc14;
 }
 
 .outer_circle {
@@ -96,8 +96,8 @@ img {
 
 .inner_circle:hover {
   animation: glow infinite 1s alternate;
-  fill : #e6ff04 !important;
-  filter: drop-shadow(0 0 5em #ffee03 );
+  fill : #9acc14 !important;
+  filter: drop-shadow(0 0 5em #9acc14 );
   stroke-width: 0;
 }
 
@@ -106,6 +106,10 @@ img {
   fill : #e6ff04 !important;
   filter: drop-shadow(0 0 2em #27eb04 );
   stroke-width: 0;
+}
+
+.leafdot {
+  fill:#ffffff
 }
 
 .leaf {
@@ -117,7 +121,7 @@ img {
 
 .leaf:hover{
   animation: glow infinite 1s alternate;
-  fill: #19a01b;
+  fill: #9acc14;
   stroke-width: 0;
 
 }

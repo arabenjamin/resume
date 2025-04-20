@@ -3,7 +3,7 @@ import { SetStateAction, useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
-import Accordion from 'react-bootstrap/Accordion';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -11,9 +11,10 @@ import Col from 'react-bootstrap/Col';
 import MyNavBar from './components/NavBar';
 import About from './components/About';
 import Contact from './components/Contact';
-import Summary from './components/Summary';
 import Experience from './components/Experience';
+import Education from './components/Education';
 import Skills from './components/Skills';
+import MyFooter from './components/Footer';
 
 
 interface Resume {
@@ -66,18 +67,20 @@ function App() {
         <br/>
         <Container>
           <Row>
-            <Col data-bs-theme="dark">
+            <Col data-bs-theme="dark" className='shadow-md '>
               {/* Set view based on active tab */}
               {currentView === 'Experience' && <Experience experience={resume.experience} />}
               {currentView === 'Skills' && <Skills skills={resume.skills} />}
               {currentView === 'Projects' && <About />} {/* TODO: This needs content */}
-              {currentView === 'More' && <About />} {/* TODO: This needs content */}
+              {currentView === 'Education' && <Education />} {/* TODO: This needs content */}
               {currentView === 'About' && <About />} 
               {currentView === 'Contact' && <Contact {...resume.contact}/>}
             </Col>
           </Row>
 
         </Container>
+
+        {/*<MyFooter/>*/}
       </>
   )
 }
