@@ -72,7 +72,6 @@ function App() {
               {currentView === 'Experience' && <Experience experience={resume.experience} />}
               {currentView === 'Skills' && <Skills skills={resume.skills} />}
               {currentView === 'Projects' && <About />} {/* TODO: This needs content */}
-              {currentView === 'Education' && <Education />} {/* TODO: This needs content */}
               {currentView === 'About' && <About />} 
               {currentView === 'Contact' && <Contact {...resume.contact}/>}
             </Col>
