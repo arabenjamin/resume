@@ -5,8 +5,12 @@ import Col from 'react-bootstrap/Col'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
-function MyNavBar({handleViewState}){
-    const handleClick = (view) => {
+
+
+function MyNavBar({handleViewState}: { handleViewState: (view: string) => void }){
+
+
+    const handleClick = (view: string): void => {
       handleViewState(view);
     };
     return(

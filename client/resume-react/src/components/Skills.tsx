@@ -10,10 +10,10 @@ import Button from 'react-bootstrap/Button';
 import Widget from './MyWidget'; 
 
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import { FaNpm, FaHtml5, FaCss3, FaBootstrap, FaGithub, FaAws, 
-  FaPython, FaNode, FaCode, FaGitAlt, FaLaptopCode, FaReact, FaVuejs, 
+  FaPython, FaNode, FaCode, FaGitAlt, FaReact, FaVuejs, 
   FaFlask, FaRust, FaLinux, FaDocker, FaYarn, FaGitlab  } from 'react-icons/fa';
 import { SiJquery, SiInsomnia, SiVim, SiGnubash,SiJavascript,SiPostgresql, SiFastapi,SiGooglecloud, SiKubernetes, SiTypescript, SiCplusplus, SiDuckdb, SiMysql, SiSqlite, SiMongodb  } from "react-icons/si";
 import { DiDjango } from "react-icons/di";
@@ -21,26 +21,39 @@ import { FaGolang } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
 import { HiCommandLine } from "react-icons/hi2";
 
+
+
+
+
 interface SkillsProps {
-    skills: Record<string, string[]>;
+    skills: SkillSet;
 }
 
-
+interface SkillSet {
+    [category: string]: Skill[];
+    Frontend: Skill[];
+    Backend: Skill[];
+    Tools: Skill[];
+}
+interface Skill {
+    name: string;
+    proficiency: number;
+}
 
 const Icons = {
 
-  Python: FaPython, Node:FaNode,
-  React: FaReact, Vue: FaVuejs , JavaScript: SiJavascript, TypeScript: SiTypescript,
-  Bootstrap:FaBootstrap, Django: DiDjango, FastAPI: SiFastapi, Flask: FaFlask,
-  Golang: FaGolang, Cplus:SiCplusplus, Rust:FaRust, DuckDB: SiDuckdb, MySQL: SiMysql,
-  SQLite3: SiSqlite, PostgreSQL:SiPostgresql, MongoDB: SiMongodb, Linux: FaLinux,Docker: FaDocker,
-  Kubernetes: SiKubernetes, AWS:FaAws, GoogleCloud: SiGooglecloud, Bash: SiGnubash, Git:FaGitAlt,
-  Github: FaGithub, Vim: SiVim,Insomnia:SiInsomnia,VScode: VscVscode, CSS3:FaCss3, HTML5:FaHtml5,
-  jquery:SiJquery, cli:HiCommandLine, Npm:FaNpm, Yarn:FaYarn, GitLab:FaGitlab
+  "Python": FaPython, "Node":FaNode,
+  "React": FaReact, "Vue": FaVuejs , "JavaScript": SiJavascript, "TypeScript": SiTypescript,
+  "Bootstrap":FaBootstrap, "Django": DiDjango, "FastAPI": SiFastapi, "Flask": FaFlask,
+  "Golang": FaGolang, "Cplus":SiCplusplus, "Rust":FaRust, "DuckDB": SiDuckdb, "MySQL": SiMysql,
+  "SQLite3": SiSqlite, "PostgreSQL":SiPostgresql, "MongoDB": SiMongodb, "Linux": FaLinux, "Docker": FaDocker,
+  "Kubernetes": SiKubernetes, "AWS":FaAws, "GoogleCloud": SiGooglecloud, "Bash": SiGnubash, "Git":FaGitAlt,
+  "Github": FaGithub, "Vim": SiVim, "Insomnia":SiInsomnia, "VScode": VscVscode, "CSS3":FaCss3, "HTML5":FaHtml5,
+  "jquery":SiJquery, "cli":HiCommandLine, "Npm":FaNpm, "Yarn":FaYarn, "GitLab":FaGitlab
 }
 
 
-const DynamicIcon = ({ name }) => {
+const DynamicIcon = ({ name }: { name: keyof typeof Icons }) => {
   const IconComponent = Icons[name] || null; // Default to null if icon is not found
   return IconComponent ? <IconComponent style={{ marginRight: '8px' }} size="1em" /> : null;
 };
@@ -115,7 +128,7 @@ const Skills = ({ skills }: SkillsProps) => {
                                     <ListGroup.Item key={idx} className='skills'>
                                       <Row>
                                         <Col>
-                                          <DynamicIcon  name={skill.name} />  {skill.name}
+                                          <DynamicIcon  name={skill.name as keyof typeof Icons} />  {skill.name}
                                         </Col>
                                         <Col>
                                           

@@ -12,10 +12,13 @@ import MyNavBar from './components/NavBar';
 import About from './components/About';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
-import Education from './components/Education';
-import Skills from './components/Skills';
-import MyFooter from './components/Footer';
 
+import Skills from './components/Skills';
+
+interface Skill {
+  name: string;
+  proficiency: number;
+}
 
 interface Resume {
   name: string;
@@ -34,7 +37,12 @@ interface Resume {
     summary: string;
     responsibilities: string[];
   }[];
-  skills: Record<string, string[]>;
+  skills: {
+    [category: string]: Skill[];
+    Frontend: Skill[];
+    Backend: Skill[];
+    Tools: Skill[];
+  };
 }
 
 function App() {

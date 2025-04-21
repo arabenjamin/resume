@@ -1,10 +1,9 @@
-import Container from 'react-bootstrap/Container';
+
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 
 import ListGroup from 'react-bootstrap/ListGroup'
-import Image from 'react-bootstrap/esm/Image';
 import { FaGithub } from "react-icons/fa";
 import{ MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
@@ -18,7 +17,7 @@ interface ContactProps {
     linkedin: string;
   }
   
-  const Contact = ({ phone, email, github, linkedin }: ContactProps) => {
+  const Contact = ({ email, github, linkedin }: ContactProps) => {
     /* TODO: This could use some work*/
     return (
 
