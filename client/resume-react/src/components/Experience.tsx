@@ -186,7 +186,7 @@ interface Job {
               </Col>
             </Row>
             
-            <Modal size="lg"  show={open} onHide={handleClose} onHide={handleCloseDownloadModal} aria-labelledby="contained-modal-title-vcenter" centered>
+            <Modal size="lg"  show={open} onHide={handleCloseDownloadModal} aria-labelledby="contained-modal-title-vcenter" centered>
               <Modal.Header closeButton>
                 <Modal.Title className='justify-center'>
                    Coming Soon 
