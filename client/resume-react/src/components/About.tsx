@@ -24,19 +24,25 @@ function About() {
                     <Col >
                         
                         <Card.Title className='text-center fs-1'>
-                            Hi !
-
+                            Ara Sheperdigian
                         </Card.Title>
+                        <Card.Subtitle className='text-center fs-4'>
+                            Software Engineer
+                        </Card.Subtitle>
                         
                         <Card.Body className='text-center'>
-                            <Card.Text className='fs-3'>
-                                I'm Ara
-                            </Card.Text>
+
                             <Card.Text>
-                            I am a Fullstack Dev with a decade of experience building, testing and deploying web apps both frontend and backend, 
-                            micro-services, API endpoints, and other cloud systems using Docker, Python, Go, both SQL and NoSQL. 
-                            I'm not really a front-end developer. But I do have experience writing in  Javascript/TypeScript, 
-                            and I am pretty familiar with Node. I've used React, Vue and jquery a fair amount in the past.
+                                I am a passionate and versatile software engineer with over a decade of 
+                                experience in designing, building, and deploying full-stack web applications. 
+                                My expertise spans backend development with Python, Go, and Docker, 
+                                as well as database management using both SQL and NoSQL solutions. 
+                                While backend development is my forte, I have also worked extensively with 
+                                frontend technologies like JavaScript, TypeScript, React, and Vue to create 
+                                intuitive and responsive user interfaces. I thrive on solving complex problems, 
+                                learning new technologies, and delivering scalable, high-quality solutions that 
+                                make an impact.
+
                             </Card.Text>
                         </Card.Body>
         

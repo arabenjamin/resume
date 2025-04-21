@@ -77,10 +77,14 @@ interface Job {
                   Rich and diverse background working for small, medium, and large employers.
                 </Card.Title>
                 <Card.Text className='text-center'>
-                  I am a fullstack engineer with a decade of experience building, testing and deploying both frontend and backend services, 
-                  micro-services, API endpoints, and other cloud systems using Docker, Python, Go, both SQL and NoSQL. 
-                  I'm not really a front-end developer, but I do have experience writing in  Javascript/TypeScript, 
-                  and I am pretty familiar with Node. I’ve used React, Vue and jquery a fair amount in the past.                  
+                  With a rich and diverse background, I have had the privilege of working with small startups, 
+                  medium-sized businesses, and large enterprises. My professional journey has allowed me to 
+                  contribute to innovative projects, solve complex technical challenges, and collaborate with 
+                  cross-functional teams. From building scalable backend systems and designing cloud-based solutions 
+                  to creating intuitive user interfaces, my experience spans a wide range of industries and 
+                  technologies. I am passionate about leveraging my skills to deliver impactful solutions and 
+                  drive success for the organizations I work with.
+            
                 </Card.Text>              
               </Col>
             </Row>

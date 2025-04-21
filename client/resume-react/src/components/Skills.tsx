@@ -81,8 +81,12 @@ const Skills = ({ skills }: SkillsProps) => {
           </Card.Title>
 
           <Card.Text className='text-center text-align-center'>
-              I don't think there is truly any way to capture all of my various skills and capablities on a sinlge page. 
-              The list below is not an exhuastive list, but should give you an idea of where I spend my time.
+            My technical skill set is a blend of expertise across both frontend and backend development, 
+            enabling me to build robust, scalable, and user-friendly applications. From crafting intuitive user 
+            interfaces with modern frameworks like React and Vue to designing efficient backend systems with Python, 
+            Golang, and Docker, I thrive on solving complex challenges. My experience spans database management, 
+            cloud platforms, and containerization, ensuring seamless integration and deployment of applications. 
+            I am always eager to learn new technologies and refine my skills to deliver impactful solutions."
           </Card.Text>
 
           <Card.Body >
