@@ -1,0 +1,92 @@
+{
+  "name": "Ara Sheperdigian",
+  "contact": {
+    "phone": "(248) 238-8615",
+    "email": "ara.benjamin@gmail.com",
+    "github": "https://github.com/arabenjamin",
+    "linkedin": "https://www.linkedin.com/in/ara-sheperdigian-a751a418",
+    "website": "arabenjamin.github.io/resume"
+  },
+  "summary": "Energetic, innovative and competent software developer and engineer offering a rich mixture of experience and success in a variety of work environments.",
+  "objective": "I am looking to put my work experience and my passion for programming and technology to good use to help ensure success for the company or institution that I’ll be a part of.",
+  "experience": [
+    {
+      "company": "HP",
+      "location": "Boise, ID (Remote via Experis)",
+      "title": "Software Engineer",
+      "dates": "May 2021 - February 2023",
+      "summary": "Developed cloud-based diagnostic systems for printer health monitoring.",
+      "technologies": ["Python", "Django", "C++", "AWS"],
+      "achievements": [
+        "Reduced diagnostic API response time by 30% by optimizing backend services.",
+        "Developed a tiny-URL microservice to shorten diagnostic API endpoints."
+      ],
+      "responsibilities": [
+        "Designed and implemented cloud diagnostic systems.",
+        "Built mock services for unimplemented APIs to enable integration testing.",
+        "Updated printer simulator in C++ to handle API endpoints on the printer."
+      ]
+    },
+    {
+      "company": "Humana Insurance",
+      "location": "Louisville, KY (Remote, via Cognizant, via E-Solutions)",
+      "title": "Software Engineer",
+      "dates": "July 2020 - January 2021",
+      "summary": "Supported internal services to automate and maintain technical resources for the business.",
+      "technologies": ["Python", "Bottle", "Docker", "Kubernetes", "Azure"],
+      "achievements": [
+        "Developed API endpoints to automate resource group creation in Azure Active Directory.",
+        "Built and deployed Docker images for development, testing, and production environments."
+      ],
+      "responsibilities": [
+        "Developed, tested, and deployed REST API endpoints for new features.",
+        "Used Docker and Kubernetes to manage containerized applications."
+      ]
+    },
+    {
+      "company": "ElTec Systems, LLC",
+      "location": "Seattle, WA",
+      "title": "Senior IT Professional",
+      "dates": "Oct 2015 - June 2020",
+      "summary": "Managed IT networks and developed internal and external web applications to streamline business operations.",
+      "technologies": ["Golang", "AWS", "SQLite", "JavaScript"],
+      "achievements": [
+        "Created a web-based route planner for dispatch coordinators using AWS.",
+        "Developed a client-facing app for service requests, reducing response time by 40%."
+      ],
+      "responsibilities": [
+        "Built and maintained web applications for inventory management and service requests.",
+        "Developed RESTful APIs for user authentication and data validation."
+      ]
+    }
+  ],
+  "skills": {
+    "Programming Languages": [
+      { "name": "Python", "proficiency": "Expert" },
+      { "name": "Golang", "proficiency": "Advanced" },
+      { "name": "JavaScript", "proficiency": "Advanced" },
+      { "name": "C++", "proficiency": "Intermediate" },
+      { "name": "Rust", "proficiency": "Beginner" }
+    ],
+    "Web Frameworks": [
+      { "name": "React", "proficiency": "Advanced" },
+      { "name": "Vue", "proficiency": "Intermediate" },
+      { "name": "Django", "proficiency": "Advanced" },
+      { "name": "Flask", "proficiency": "Advanced" }
+    ],
+    "Databases": [
+      { "name": "PostgreSQL", "proficiency": "Advanced" },
+      { "name": "MongoDB", "proficiency": "Intermediate" },
+      { "name": "Redis", "proficiency": "Intermediate" }
+    ],
+    "Cloud Platforms": [
+      { "name": "AWS", "proficiency": "Advanced" },
+      { "name": "Azure", "proficiency": "Intermediate" }
+    ],
+    "Tools": [
+      { "name": "Docker", "proficiency": "Advanced" },
+      { "name": "Kubernetes", "proficiency": "Intermediate" },
+      { "name": "Git", "proficiency": "Advanced" }
+    ]
+  }
+}
