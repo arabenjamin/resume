@@ -118,68 +118,65 @@
       }
     ],
     "skills": {
-      "frontend":[
-        {"name":"TypeScript", "proficiency":70 },
-        {"name":"JavaScript", "proficiency":85 },
-        {"name":"Node", "proficiency":60 },
-        {"name":"Npm", "proficiency":50  },
-        {"name":"Yarn", "proficiency":50 },
-        {"name":"React", "proficiency":80 },
-        {"name":"Vue", "proficiency":60 },
-        {"name":"Bootstrap", "proficiency":75 },
-        {"name":"CSS3", "proficiency":75 },
-        {"name":"HTML5", "proficiency":100 },
-        {"name":"jquery", "proficiency":75 }
+      "languages": [
+        "Python (10 years)",
+        "Golang (6 years)",
+        "Javascript/Typescript (6 years)",
+        "C/C++",
+        "Rust"
       ],
-      "backend":[
-        {"name":"Bash", "proficiency":75 },
-        {"name":"cli", "proficiency":95 },
-        {"name":"Linux", "proficiency":95 },
-        {"name":"Golang", "proficiency":85 },
-        {"name":"Python", "proficiency":90 },
-        {"name":"Rust", "proficiency":60 },
-        {"name":"Django", "proficiency":75 },
-        {"name":"Flask", "proficiency":95 },
-        {"name":"FastAPI", "proficiency":95 },
-        {"name":"Cplus", "proficiency":60 },
-        {"name":"DuckDB", "proficiency":75 },
-        {"name":"MySQL", "proficiency":75 },
-        {"name":"SQLite3", "proficiency":75 },
-        {"name":"PostgreSQL", "proficiency":75 },
-        {"name":"MongoDB", "proficiency":75 },
-        {"name":"Docker", "proficiency":95 },
-        {"name":"DockerCompose", "proficiency":85 },
-        {"name":"Kubernetes", "proficiency":65 },
-        {"name":"AWS", "proficiency":75 },
-        {"name":"GoogleCloud", "proficiency":65 },
-        {"name":"Azure", "proficiency":65 }    
+      "security": [
+        "SSL",
+        "Encryption"
       ],
-      "tools":[
-        {"name":"Github", "proficiency":95 },
-        {"name":"GitLab", "proficiency":85 },
-        {"name":"Git", "proficiency":90 },
-        {"name":"Insomnia", "proficiency":100 },
-        {"name":"Vim", "proficiency":99 },
-        {"name":"VScode", "proficiency":100 },
-        {"name":"Postman", "proficiency":75 },
-        {"name":"Gimp", "proficiency":75 },
-        {"name":"Blender", "proficiency":55 },
-        {"name":"Chrome", "proficiency":100 },
-        {"name":"Firefox", "proficiency":100 },
-        {"name":"Lens", "proficiency":60 },
-        {"name":"Make", "proficiency":70 },
-        {"name":"CMake", "proficiency":70 },
-        {"name":"RaspberryPi", "proficiency":95 },
-        {"name":"Esp32", "proficiency":65 },
-        {"name":"Arduino", "proficiency":95 },
-        {"name":"VirtualBox", "proficiency":75 },
-        {"name":"VMware", "proficiency":65 },
-        {"name":"Gpg2", "proficiency":85 },
-        {"name":"ssh", "proficiency":95 }
-
-
+      "web_servers": [
+        "Nginx",
+        "Apache"
+      ],
+      "web_frameworks": [
+        "Node",
+        "React",
+        "Vue",
+        "Django",
+        "Flask",
+        "FastAPI"
+      ],
+      "databases": [
+        "DuckDB",
+        "MySQL/MariaDB",
+        "SQLite3",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis"
+      ],
+      "os_platform": [
+        "Linux",
+        "Windows",
+        "IoT",
+        "Embedded Systems"
+      ],
+      "vm_containers_cloud": [
+        "Docker",
+        "Docker Compose",
+        "Kubernetes",
+        "VirtualBox",
+        "VMware",
+        "AWS",
+        "Google Cloud",
+        "Azure"
+      ],
+      "robotics": [
+        "Microcontrollers",
+        "Atmega328p",
+        "ESP8266",
+        "I2C, SPI, UART",
+        "Troubleshooting microcontrollers and their corresponding circuits"
+      ],
+      "robotics_projects": [
+        "Connected a Wii chuck to a robotic arm",
+        "Built restful service to run on raspberry pi to remotely communicate with small rover",
+        "Used an accelerometer to keep robotic arm level",
+        "Setup OpenCV on Raspberry Pi, used webcam and ML to find humans, mapped visual coordinates to pan/tilt servos to keep humans in the center of the screen."
       ]
     }
-
-
   }
