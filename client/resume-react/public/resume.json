@@ -7,17 +7,33 @@
       "linkedin": "https://www.linkedin.com/in/ara-sheperdigian-a751a418",
       "website": "arabenjamin.github.io/resume"
     },
-    "summary": "Energetic, innovative and competent software developer and engineer offering a rich mixture of experience and success in a variety of work environments.",
-    "objective": "I am looking to put my work experience and my passion for programming and technology to good use to help ensure success for the company or institution that I’ll be a part of.",
+    "summary": "I am a highly skilled and versatile software engineer with over a decade of experience in designing, developing, and deploying scalable solutions across diverse industries. My expertise spans backend development with Python, Golang, and Docker, as well as frontend technologies like React and Vue. I have a proven track record of leveraging cloud platforms such as AWS and Google Cloud to build robust architectures and deliver impactful solutions. With a passion for solving complex problems, I thrive in collaborative environments, continuously learning and adapting to emerging technologies to drive innovation and success.",
+    "objective": "I aim to leverage my extensive experience in software engineering, backend development, and cloud architecture to contribute to innovative projects that drive organizational success. With a passion for solving complex problems and a commitment to continuous learning, I seek opportunities to collaborate with dynamic teams, utilize cutting-edge technologies, and deliver impactful solutions that align with business goals.",
     "experience": [
       {
-        "company": "Consultant/Contractor",
+        "company": "Hummingbird Security",
+        "location": "Remote",
+        "title": "Senior Software Engineer",
+        "dates": "February 2025 - present",
+        "summary": "As a Senior Software Engineer at Hummingbird Security, I am responsible for developing and maintaining security solutions that detect compromised identities and authentication. My role involves working with a team to design, implement, and optimize cloud arcitecture that utilizes AI/ML to help detect and respond in realtime.",
+        "responsibilities": [
+          "Design and implement scalable cloud architecture using AWS services.",
+          "Develop and maintain security solutions that leverage AI/ML for real-time threat detection.",
+          "Collaborate with cross-functional teams to ensure the security and integrity of applications.",
+          "Optimize existing systems for performance and reliability."
+        ]
+      },
+      {
+        "company": "Self Employeed Consultant/Contractor",
         "location": "Remote",
         "title": "Freelance Software Engineer",
         "dates": "February 2023 - Present",
-        "summary": "",
+        "summary": "As a freelance software engineer, I have been working on various projects that involve web development, API design, and cloud solutions. My focus has been on delivering high-quality software solutions using technologies such as Python, Golang, and AWS.",
         "responsibilities": [
-          
+          "Developed and maintained cloud applications using Python and Golang.",
+          "Designed and implemented RESTful APIs for various applications.",
+          "Utilized AWS services for cloud deployment and management.",
+          "Collaborated with clients to understand their requirements and deliver solutions that meet their needs."
         ]
       },
       {
@@ -142,21 +158,34 @@
         {"name":"Flask", "proficiency":95 },
         {"name":"FastAPI", "proficiency":95 },
         {"name":"Cplus", "proficiency":60 },
-        {"name":"DuckDB", "proficiency":75 },
-        {"name":"MySQL", "proficiency":75 },
+        {"name":"DuckDB", "proficiency":80 },
+        {"name":"MySQL", "proficiency":80 },
         {"name":"SQLite3", "proficiency":75 },
         {"name":"PostgreSQL", "proficiency":75 },
         {"name":"MongoDB", "proficiency":75 },
+        {"name":"Neo4j", "proficiency":85 },
         {"name":"Docker", "proficiency":95 },
         {"name":"DockerCompose", "proficiency":85 },
         {"name":"Kubernetes", "proficiency":65 },
         {"name":"AWS", "proficiency":75 },
+        {"name":"AWS Lamda", "proficiency":90 },
+        {"name":"AWS S3", "proficiency":90 },
+        {"name":"AWS SQS", "proficiency":90 },
+        {"name":"AWS ECR", "proficiency":90 },
+        {"name":"AWS EC2", "proficiency":90 },
+        {"name":"AWS ECS", "proficiency":90 },
+        {"name":"AWS RDS", "proficiency":90 },
+        {"name":"AWS CloudFormation", "proficiency":75 },
+        {"name":"AWS Neptune", "proficiency":75 },
+        {"name":"Terraform", "proficiency":75 },
         {"name":"GoogleCloud", "proficiency":65 },
         {"name":"Azure", "proficiency":65 }    
       ],
       "tools":[
         {"name":"Github", "proficiency":95 },
-        {"name":"GitLab", "proficiency":85 },
+        {"name":"Github Actions", "proficiency":95 },
+        {"name":"GitLab", "proficiency":90 },
+        {"name":"GitLab CI", "proficiency":90 },
         {"name":"Git", "proficiency":90 },
         {"name":"Insomnia", "proficiency":100 },
         {"name":"Vim", "proficiency":99 },
@@ -175,8 +204,31 @@
         {"name":"VirtualBox", "proficiency":75 },
         {"name":"VMware", "proficiency":65 },
         {"name":"Gpg2", "proficiency":85 },
-        {"name":"ssh", "proficiency":95 }
-
+        {"name":"ssh", "proficiency":95 },
+        {"name":"Lens", "proficiency":95 },
+        {"name":"SonarCube", "proficiency":95 },
+        {"name":"n8n", "proficiency":95 },
+        {"name":"ElasticSearch", "proficiency":75 },
+        {"name":"Splunk", "proficiency":65 },
+        {"name":"Jira", "proficiency":85 },
+        {"name":"Confluence", "proficiency":85 },
+        {"name":"Slack", "proficiency":100 },
+        {"name":"Ollama", "proficiency":80 },
+        {"name":"ChatGPT", "proficiency":80 },
+        {"name":"OpenAI", "proficiency":80 },
+        {"name":"HuggingFace", "proficiency":80 },
+        {"name":"Pinecone", "proficiency":80 },
+        {"name":"Redis", "proficiency":80 },
+        {"name":"Vector Databases", "proficiency":80 },
+        {"name":"LangChain", "proficiency":80 },
+        {"name":"LlamaIndex", "proficiency":80 },
+        {"name":"Pandas", "proficiency":80 },
+        {"name":"NumPy", "proficiency":80 },
+        {"name":"Plotly", "proficiency":80 },
+        {"name":"Scikit-learn", "proficiency":80 },
+        {"name":"TensorFlow", "proficiency":60 },
+        {"name":"PyTorch", "proficiency":60 },
+        {"name":"OpenCV", "proficiency":60 }
 
       ]
     }

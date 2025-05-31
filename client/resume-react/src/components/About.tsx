@@ -18,7 +18,7 @@ function About() {
 
                 
                     <Col>
-                        <Card.Img  variant='top' className='img_container' src='/SelfPhoto-landscape-sm.png'></Card.Img>
+                        <Card.Img  variant='top' className='img_container' src='/resume/SelfPhoto-landscape-sm.png'></Card.Img>
                     </Col>
                     
                     <Col >

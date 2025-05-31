@@ -51,7 +51,7 @@ function App() {
 
   useEffect(() => {
     // Fetch the resume.json file
-    fetch('/resume.json')
+    fetch('/resume/resume.json')
       .then((response) => response.json())
       .then((data) => setResume(data))
       .catch((error) => console.error('Error fetching resume:', error));
